@@ -20,6 +20,18 @@ export default {
     font-size: 62.5%;
 }
 
+@media (max-width: 750px) {
+    :root {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        font-size: 45%;
+    }
+}
+
 body {
     font-size: 1.6rem;
 }

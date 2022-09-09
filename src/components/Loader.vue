@@ -15,7 +15,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 4rem;
 }
 .loader {
     width: 8vmax;

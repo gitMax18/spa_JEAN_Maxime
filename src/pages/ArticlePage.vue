@@ -53,6 +53,7 @@ export default {
 <style lang="scss" scoped>
 .article-container {
     .article-body {
+        font-size: 1.8rem;
         margin: 2rem 0;
     }
 }

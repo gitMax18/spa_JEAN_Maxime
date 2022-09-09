@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="{ name: 'ArticlePage', params: { id: article.id } }" class="card-container">
+    <router-link :to="{ name: 'ArticlePage', params: { id: article.id } }" class="card-container" :class="{ noCursor: isNoCursor }">
         <div class="letter" :style="{ backgroundColor: getRandColor() || 'black' }">{{ firstLetter }}</div>
         <h2>{{ article.title }}</h2>
     </router-link>
@@ -15,6 +15,9 @@ export default {
     computed: {
         firstLetter() {
             return this.article.title.charAt(0).toUpperCase();
+        },
+        isNoCursor() {
+            return this.$route.name === "ArticlePage";
         },
     },
     methods: {
@@ -36,9 +39,11 @@ export default {
     text-decoration: none;
     color: black;
     margin: 1rem 0;
+    cursor: pointer;
 
     .letter {
         padding: 1rem;
+        min-width: 5rem;
         width: 5rem;
         height: 5rem;
         display: flex;
@@ -50,5 +55,9 @@ export default {
         color: white;
         font-weight: bold;
     }
+}
+
+.noCursor {
+    cursor: default;
 }
 </style>

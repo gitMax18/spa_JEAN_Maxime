@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .comment-container {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .comment-name {
     font-size: 1.8rem;
@@ -26,5 +26,6 @@ export default {
 .comment-email {
     margin-bottom: 1rem;
     display: block;
+    font-size: 1.4rem;
 }
 </style>
